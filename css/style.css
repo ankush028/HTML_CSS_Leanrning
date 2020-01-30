@@ -10,11 +10,6 @@ header{
 	background-size:70%
 	
 }
-.nav{
-	width: 100%;
-	background-color :rgba(450,0,60,0.8);
-	color: #fff;	
-}
 ul{
 	float: right;
 	list-style-type: none;
@@ -39,6 +34,7 @@ ul li a:hover{
 	width: 150px;
 	height: auto;
 }
+
 ul li.active a{
 	background-color: #fff;
 	color: #000;
@@ -85,15 +81,47 @@ ul li.active a{
 	display: none;
 	position: absolute;
 	width: 100px;
-	background-color: orange;	
+	background-color: orange;
+	font-size:20px;	
 }
 .menu_item:hover .submenu{
 	display: block;
+	transition: 1s all;	
+	animation: 1s drop ease
+}
+@keyframes drop{
+     0%{
+	transform: scale(2,2) rotateX(90deg)
+	}
+     100%{
+	transform: scale(1,1) rotateX(0deg)
+}
 }
 .submenu_item:hover{
 	background-color: rgba(0,0,0,0.6);
 	border-left: 10px solid rgba(450,0,60,0.8);
 }
+.java_submenu{
+	text-transform: none;
+	display: none;
+	position: absolute;
+	width: 100px;
+	background-color: black;
+	font-size: 15px;
+}
+.submenu:hover .java_submenu{
+	display: block;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
